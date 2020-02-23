@@ -17,7 +17,9 @@
 
         if ($get_query > 0)
         {
-            header ('location:admin/dashboard.php');
+
+            echo "U are admin";
+            header ('location:dashboard.php');
         }
     
     }
@@ -34,21 +36,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/loginmodal.css" rel="stylesheet">
+    
 </head>
 <body>
 
 
-<form action="" method="POST">
 
-    <label>Username</label> <br>
-    <input type="text" name="username" placeholder= "Username"> <br>
+<div class="login-form" id="loginmodal" v-if="showlogin">
+    <form action="" method="POST">
+        <h2 class="text-center">Log in</h2>       
+        <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" name="submit" class="btn btn-primary btn-block">Log in</button>
+        </div>
+            
+    </form>
+   
+</div>
 
-    <label>Password</label> <br>
-    <input type="password" name="password" placeholder="Password"> <br>
 
-    <button type="submit" name="submit">Login</button>
 
-</form>
+<button @click="showlogin = false"> Login</button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+ new Vue({
     
+    el:'#loginmodal',
+    data:{  
+        showlogin: true,
+    },
+    
+
+    
+});
+    
+
+</script>
 </body>
 </html>
