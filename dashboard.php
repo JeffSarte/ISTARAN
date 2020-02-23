@@ -16,7 +16,7 @@
 
 <div class="sidebar">
 
-  <header> Istaran </header>
+  <header> Istaran </header><br>
 
   <ul>
   
