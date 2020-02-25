@@ -1,11 +1,6 @@
-
-var dashboard  = new Vue({
-    el: '#dashboard',
-    data:{
-        dashboard1: false
-        
-    }
-
-   
-
+var dashboard = new Vue({
+  el: "#dashboard",
+  data: {
+    dashboard1: false
+  }
 });
