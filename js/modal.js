@@ -1,6 +1,7 @@
 var dashboard = new Vue({
   el: "#dashboard",
   data: {
-    dashboard1: false
+    dashboard1: false,
+    close: false
   }
 });

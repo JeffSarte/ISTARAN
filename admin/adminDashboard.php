@@ -6,31 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/sidebar.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
 
-
-
-<div class="sidebar">
-
-  <header> Istaran </header><br>
-
-  <ul>
-  
-  <li><a href="#"><i class="fas fa-qrcode">Dashboard</i></a></li>
-  <li><a href="#">Owner</a></li>
-  <li><a href="#">Boarders</a></li>
-  <li><a href="#">Reports</a></li>
-  <li><a href="#">History</a></li>  
-  <li><a href="#">BoardingHouse</a></li>
-
-
-  </ul>
-  
-</div>
+<?php  include '../include/adminSidebar.php'; ?>
 
 
 
@@ -45,6 +27,8 @@
 
 </div>
 </div>
+
+
 
 <script src="js/modal.js">
 </script>

@@ -19,7 +19,7 @@
         {
 
             echo "U are admin";
-            header ('location:saveowner.php');
+            header ('location:admin/adminDashboard.php');
         }
     
     }
