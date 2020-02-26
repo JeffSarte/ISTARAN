@@ -19,25 +19,25 @@
     <div class="tabledesign">
 
     
-    <table class="table">
-  <thead class="thead-dark">
-  
-    <tr>     
-    <th scope="col-5">First</th>
-            <th scope="col">Mname</th>
-            <th scope="col">Lname</th>
-            <th scope="col">Age</th>
-            <th scope="col">Gender</th>
-            <th  class="text-right">username</th>
-            <th  class="text-right">password</th>
-            <th  class="text-right">number</th>
-            <th  class="text-right">Date</th>
-            <th scope="col-5">Action</th>
-            
-    </tr>
-  <?php  include 'getowner.php';?>
-</thead>
-</table>
+        <table class="table">
+    <thead class="thead-dark">
+    
+        <tr>     
+        <th scope="col-5">First</th>
+                <th scope="col">Mname</th>
+                <th scope="col">Lname</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+                <th  class="text-right">username</th>
+                <th  class="text-right">password</th>
+                <th  class="text-right">number</th>
+                <th  class="text-right">Date</th>
+                <th scope="col-5">Action</th>
+                
+        </tr>
+    <?php  include 'getowner.php';?>
+    </thead>
+    </table>
 </div>
 
 <div id="dashboard">

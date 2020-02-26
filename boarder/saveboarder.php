@@ -1,6 +1,6 @@
 <?php
 
-    include 'include/conn.php';
+    include '../include/conn.php';
 
     $fname = $_POST['fname'];
     $mname = $_POST['mname'];
@@ -24,7 +24,7 @@
        mysqli_query($conn,$query);
  
 
-    
+    header ('location:boarder.php');
 
 
 ?>

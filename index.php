@@ -19,7 +19,7 @@
         {
 
             echo "U are admin";
-            header ('location:admin/adminDashboard.php');
+            header ('location:owner/ownerDashboard.php');
         }
     
     }
